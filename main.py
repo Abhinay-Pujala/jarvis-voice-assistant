@@ -250,12 +250,12 @@ if __name__ == "__main__":
                         if "stop listening" in command.lower():
                             speak("oh! sure sir.")
                             break
-                        if "ask ai" in command.lower():
-                            question = command.replace("ask ai", "").strip()
-                            speak("Let me process this with OpenAI.")
-                            response = openAIResponse(question)
-                            speak(response)
-                            continue
+                        # if "ask ai" in command.lower():
+                        #     question = command.replace("ask ai", "").strip()
+                        #     speak("Let me process this with OpenAI.")
+                        #     response = openAIResponse(question)
+                        #     speak(response)
+                        #     continue
                         processCommand(command)
                         continue
                     except Exception as e:
